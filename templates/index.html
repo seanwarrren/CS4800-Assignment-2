@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Picker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Outfit Picker</h1>
+
+        <label for="activity">What are you doing today?</label>
+        <select id="activity">
+            <option value="">-- Select --</option>
+            <option value="school">School</option>
+            <option value="work">Work</option>
+            <option value="going_out">Going Out</option>
+        </select>
+
+        <label for="weather">What's the weather like?</label>
+        <select id="weather">
+            <option value="">-- Select --</option>
+            <option value="hot">Hot</option>
+            <option value="warm">Warm</option>
+            <option value="cold">Cold</option>
+            <option value="rainy">Rainy</option>
+        </select>
+
+        <button id="get-outfit">Get Outfit</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
