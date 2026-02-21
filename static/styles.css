@@ -13,9 +13,12 @@ body {
 
 h1 {
     margin-bottom: 28px;
-    color: #fff;
     font-weight: 700;
     letter-spacing: -0.5px;
+    background: linear-gradient(to right, #a8a8a8, #e8e8e8, #c0c0c0, #f0f0f0, #a8a8a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 label {
